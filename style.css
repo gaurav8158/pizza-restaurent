@@ -1,0 +1,240 @@
+*{
+    margin:0;
+    padding:0; 
+}
+html{
+       background-color: black;
+color:white;
+margin:0;
+padding:0;
+}
+body{
+    display: block;
+    font-family : ruda;
+    letter-spacing: 0.09em;
+    margin:0;
+    padding:0;
+}
+
+
+.header {
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 0px 20px;
+}
+
+.left-nav{
+    padding-left: 3vw;
+}
+
+.header h3 {
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 700;    
+    font-size: 2.5vw;
+
+}
+
+.mid-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row;
+}
+
+ .mid-nav a {
+    font-family: 'Ruda';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.2vw;
+    padding: 1.9vw;
+} 
+
+.right-nav {
+    display: flex;
+    align-items: center;
+}
+
+.right-nav > .insta-icon {
+    padding-top: 1.5vw;
+    width: 9vw;
+}
+
+.right-nav > .facebook-icon {
+    padding-right: 2vw;
+    width: 5vw;
+}
+
+.right-nav > .whatsapp-icon {
+    width: 5vw;
+}
+
+
+@media screen and (max-width: 480px)  {
+    .about-us{
+       justify-content: center; 
+       margin-top: 100px;
+    }
+    .about-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-content img{
+        max-width: 100%;
+    }
+     .card-container{
+        grid-template-columns: auto !important;
+     }
+     .card{
+        width:100% !important;
+     }
+    body{
+        display:flex;
+        flex-flow: column wrap;
+    }
+    .head-body{
+    display: flex;
+    flex-flow : column wrap;
+    }
+    .about-us, .menu, .find ,.foot{
+        padding:100px 150px;
+    }
+}
+
+.body-pic{
+    min-width: 100%; 
+    position: relative;
+    
+}
+.pic-caption{
+           width:500px;
+            font-weight: 700;
+            position: absolute;
+            top:200px;
+            left:100px;
+            z-index: 1;
+}
+.pic-caption p, .l1{
+    width:300px !important;
+    font-family: 'Ruda';
+}
+.pic-caption h1{
+    font-size: 70px;
+    letter-spacing: 0.09em;
+    font-weight: 700;
+    font-family: Quattrocento;
+}
+.find-left{
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+.pic-line{
+    width:300px;
+    height:5px;
+    color:red;
+    background-color: red;
+}
+.about-us{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+.about-content{
+    display: flex;
+    margin: auto;
+    flex-wrap: row wrap;
+    padding-top: 30px;
+    gap: 30px;
+}
+ 
+.about-content img{
+    max-width: 50%;
+}
+.line{
+    height:3px;
+    color:red;
+    background-color: red;  
+}
+.about-us, .menu, .find ,.foot{
+    padding:50px 150px;
+}
+.foot{
+    padding-bottom: 0;
+}
+.about-head{
+    text-align: center;
+    align-items: center; 
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    
+}
+.about-content{
+    display: flex;
+    gap:100px;
+}
+
+.menu-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:10px;
+}
+.card-container h3{
+    color: #F2C94C;
+}
+.card{
+    padding:20px;
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+.call{
+    display: grid;
+    grid-template-columns: 30px 100px;
+}
+.head-body{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+}
+.find-left{
+    padding:0px 50px;
+}
+.map{
+    padding:0px 50px;
+   width:400px;
+}
+.foot{
+display: flex;
+align-items: center ;
+justify-content: space-between;
+padding-left: 20px;
+padding-right: 100px;
+}
+.man{
+    height:200px;
+}
+.foot-right{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
